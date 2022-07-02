@@ -1,0 +1,38 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+.container img{
+    width: 75%;
+    margin: auto;
+}
+.container h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-size: 90px;
+}
+.currentDate{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 15px;
+    color: rgb(65, 51, 65);
+    font-size: 22px;
+    font-weight: 600;
+}
+.currentDateh2{
+    font-size: 42px;
+    margin-top: 600;
+}

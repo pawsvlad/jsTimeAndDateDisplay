@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Time and Date</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="time.js"> </script>
+</head>
+<body>
+    <div class="container">
+
+        <h1 id="whatTime"></h1>
+    </div>
+    <div class="currentDate">
+        <h1> Today's Date </h1>
+        <h2 id="currentDate"></h2>
+    </div>
+    <script>
+        let time = document.getElementById("whatTime");
+setInterval(() => {
+    let d = new Date ();
+    time.innerHTML = d.toLocaleTimeString();
+},1000)
+    </script>
+    <script>
+        let date = document.getElementById("currentDate");
+        let d = new Date ();
+        date.innerHTML = d.toLocaleDateString ("en",{year:"numeric",day:"2-digit", month:"2-digit"})
+
+    </script>
+</body>
+</html>
